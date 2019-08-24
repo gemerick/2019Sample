@@ -11,3 +11,5 @@
             command: |
               echo Running build
               ./gradlew clean build
+        - store_artifacts:
+            path: /src/build/exe/frcUserProgram/release
