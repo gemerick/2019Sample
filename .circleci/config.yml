@@ -3,9 +3,10 @@
     build:
       docker: 
         - image: gemerick/frc2019:latest # the primary container, where your job's commands are run
-      working_directory: /
+      working_directory: /src
       steps:
-        - checkout # check out the code in the project directory
+        - checkout: # check out the code in the project directory
+            path: /src
         - run:
             command: |
               echo Running build
