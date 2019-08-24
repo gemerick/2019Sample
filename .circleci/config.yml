@@ -2,7 +2,11 @@
   jobs:
     build:
       docker: 
-        - image: circleci/node:4.8.2 # the primary container, where your job's commands are run
+        - image: gemerick/frc2019:latest # the primary container, where your job's commands are run
+      working_directory: /
       steps:
         - checkout # check out the code in the project directory
-        - run: echo "hello world" # run the `echo` command
+        - run:
+          command: |
+            echo Running build
+            ./gradle clean build
