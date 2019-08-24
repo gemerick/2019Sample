@@ -7,6 +7,6 @@
       steps:
         - checkout # check out the code in the project directory
         - run:
-          command: |
-            echo Running build
-            ./gradle clean build
+            command: |
+              echo Running build
+              ./gradle clean build
