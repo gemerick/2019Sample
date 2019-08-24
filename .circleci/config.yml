@@ -10,4 +10,4 @@
         - run:
             command: |
               echo Running build
-              ./gradle clean build
+              ./gradlew clean build
